@@ -10,15 +10,18 @@ $app = new \Slim\App([ 'settings' => [
   
 $app->get('/', function ()
 {
-    $UsersController = new \App\Controllers\UsersController;
-    $UsersController->index();
+    #$UsersController = new \App\Controllers\UsersController;
+    #$UsersController->index(); 
+    echo "Hello Word";
 });
  
  
 $app->get('/add', function ()
 {
-    $UsersController = new \App\Controllers\UsersController;
-    $UsersController->create();
+    #$UsersController = new \App\Controllers\UsersController;
+    #$UsersController->create();
+
+    echo "Hello Word 2";
 });
  
 $app->post('/add', function ()
