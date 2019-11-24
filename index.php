@@ -18,10 +18,9 @@ $app->get('/', function ()
  
 $app->get('/add', function ()
 {
-    #$UsersController = new \App\Controllers\UsersController;
-    #$UsersController->create();
+    $UsersController = new \App\Controllers\UsersController;
+    $UsersController->create();
 
-    echo "Hello Word 2";
 });
  
 $app->post('/add', function ()
