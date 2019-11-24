@@ -1,6 +1,8 @@
 <?php
 
 define('BASE_PATH', dirname(__FILE__));
+
+define ('URL_PATH', 'http://localhost/php/mvc');
  
 
 define('MYSQL_HOST', 'localhost');

@@ -10,9 +10,9 @@ $app = new \Slim\App([ 'settings' => [
   
 $app->get('/', function ()
 {
-    #$UsersController = new \App\Controllers\UsersController;
-    #$UsersController->index(); 
-    echo "Hello Word";
+    $UsersController = new \App\Controllers\UsersController;
+    $UsersController->index(); 
+    
 });
  
  
