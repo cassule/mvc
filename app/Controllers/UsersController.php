@@ -34,7 +34,7 @@ class UsersController { /** * Listagem de usuários */
  
         if (User::save($name, $email, $gender, $birthdate))
         {
-            header('Location: /');
+            header('Location: /php/mvc');
             exit;
         }
     }
@@ -68,7 +68,7 @@ class UsersController { /** * Listagem de usuários */
  
         if (User::update($id, $name, $email, $gender, $birthdate))
         {
-            header('Location: /');
+            header('Location: /php/mvc');
             exit;
         }
     }
@@ -81,7 +81,7 @@ class UsersController { /** * Listagem de usuários */
     {
         if (User::remove($id))
         {
-            header('Location: /');
+            header('Location: /php/mvc');
             exit;
         }
     }

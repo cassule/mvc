@@ -58,8 +58,8 @@
  
  
 <td>
-                <a href="/edit/<?php echo $user['id']; ?>">Editar</a>
-                <a href="/remove/<?php echo $user['id']; ?>" onclick="return confirm('Tem certeza de que deseja remover?');">Remover</a>
+                <a href="<?php echo URL_PATH; ?>/edit/<?php echo $user['id']; ?>">Editar</a>
+                <a href="<?php echo URL_PATH; ?>/remove/<?php echo $user['id']; ?>" onclick="return confirm('Tem certeza de que deseja remover?');">Remover</a>
             </td>
  
         </tr>

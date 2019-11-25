@@ -1,7 +1,9 @@
 <?php 
 
 namespace App\Models; 
-use App\DB; class User { /** * Busca usuários * * Se o ID não for passado, busca todos. Caso contrário, filtra pelo ID especificado. */ 
+use App\DB; 
+
+class User { /** * Busca usuários * * Se o ID não for passado, busca todos. Caso contrário, filtra pelo ID especificado. */ 
     public static function selectAll($id = null) { 
         
         $where = ''; if (!empty($id)) { 
