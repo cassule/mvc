@@ -6,9 +6,13 @@ use App\DB;
 class User { /** * Busca usuários * * Se o ID não for passado, busca todos. Caso contrário, filtra pelo ID especificado. */ 
     public static function selectAll($id = null) { 
         
-        $where = ''; if (!empty($id)) { 
+        $where = ''; 
+        
+        if (!empty($id)) { 
             
-            $where = 'WHERE id = :id'; } 
+            $where = 'WHERE id = :id'; 
+        
+        } 
             
             $sql = sprintf("SELECT id, name, email, gender, birthdate FROM users %s ORDER BY name ASC", $where); 
             
