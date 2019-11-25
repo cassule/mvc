@@ -2,7 +2,7 @@
  
           
  
-<form action="/edit" method="post">
+<form action="<?php echo URL_PATH; ?>/edit" method="post">
     <label for="name">Nome: </label>
      
     <input type="text" name="name" id="name" value="<?php echo $user['name']; ?>">

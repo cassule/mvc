@@ -3,7 +3,7 @@
  
  
  
-<a href="/add">Adicionar Usuário</a>
+<a href="<?php echo URL_PATH; ?>/add">Adicionar Usuário</a>
  
  
 <?php if (count($users) > 0): ?>

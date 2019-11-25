@@ -2,7 +2,7 @@
  
           
  
-<form action="/add" method="post">
+<form action="<?php echo URL_PATH; ?>/add" method="post">
     <label for="name">Nome: </label>
      
     <input type="text" name="name" id="name">
